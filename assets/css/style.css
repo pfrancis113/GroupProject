@@ -38,3 +38,20 @@
     background: #ddd;
     color: black;
 }
+
+/* styled the search bar top right and on top of the background video*/
+#searchBar {
+        position: fixed;
+        top: 0;
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 10px;
+    
+}
+/* styled search button */
+#search-btn {
+    background-color: black;
+    color: white;
+}
