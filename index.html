@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>YouPhonic</title>
+  <title>YOUPHONIC</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Bootstrap core CSS -->
@@ -26,95 +26,53 @@
   <div class="text-center">
     <img src='assets/images/project.gif' alt='headerImg' width='100%'>
   </div>
-
+  
   <!--Main layout-->
   <main>
     <div class="container">
       <div class="row text-center">
-        <!--Grid column-->
+          <!--Grid column-->
         <div class="col-md-12 mb-4">
           <div id="searchBar">
             <form class="navbar-form" role="search">
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Add the Artist"> +
-                <input type="text" class="form-control" placeholder="Add the Song Title">
-                <div id="null-result">
-                  <p>sorry check spelling!</p>
-                  <img src="http://r.ddmcdn.com/w_830/s_f/o_1/cx_0/cy_66/cw_288/ch_162/APL/uploads/2014/10/cat_5-1.jpg" alt="">
-                </div>
+                <input id="artistSearch" type="text" class="form-control" placeholder="Add the Artist"> +
+                <input id="trackSearch" type="text" class="form-control" placeholder="Add the Song Title">
+                <!-- <div id="null-result"> -->
+                <button id="get-lyrics" onclick="getLyrics()">Get Me My Lyrics!</button>
               </div>
             </form>
           </div>
         </div>
-
-<!-- 
-        <a href="#openModal" src="assets/images/Button.png" class="button">Open Modal</a>
-        <input type="image" href="#openModal" src="assets/images/Button.png" name="saveForm" class="btTxt submit" id="saveForm" />
-      </div> -->
+      </div> 
+            <!-- this is the divider bar -->
+        <div class="divider">
+          <hr class="my-4" color='red'>
+        </div>
     </div>
-    <!-- this is the divider bar -->
-    <div class="divider">
-      <hr class="my-4" color='red'>
-    </div>
-    </div>
-    <!-- end of the divider bar -->
-
-    <!--Grid row-->
+          <!-- end of the divider bar -->
+          
+          <!--Grid row-->
     <div class="row">
-
-      <!--Grid column-->
+            <!--Grid column-->
       <div class="col-md-6 mb-4">
         <div class="container">
-          <div class="embed-responsive embed-responsive-4by3">
+          <div class="embed-responsive embed-responsive-4by3"> 
             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rRZ-IxZ46ng"></iframe>
-          </div>
+          </div>        
         </div>
       </div>
-
-      <!--Grid column-->
-      <div class="col-md-6 mb-4">
-
-        <!-- KJS take this scroller out and swap out for html version-->
-        <h3 class="h3 mb-4">Place Holder Text for Song Title</h3>
-        <div class="example3">
-          <p>It's not that easy being green;
-            <br>Having to spend each day the color of the leaves.
-            <br>When I think it could be nicer being red, or yellow or gold
-            <br>Or something much more colorful like that.
-            <br>It's not easy being green.
-            <br>It seems you blend in with so many other ordinary things.
-            <br>And people tend to pass you over
-            <br>'Cause you're not standing out like flashy sparkles in the water-
-            <br>Or stars in the sky.
-            <br>But green's the color of Spring.
-            <br>And green can be cool and friendly-like.
-            <br>And green can be big like an ocean,
-            <br>Or important like a mountain,
-            <br>Or tall like a tree.
-            <br>When green is all there is to be
-            <br>It could make you wonder why,
-            <br>But why wonder why wonder?
-            <br>I am green and it'll do fine, it's beautiful!
-            <br>And I think it's what I want to be.
-            <br>And green can be big like an ocean,
-            <br>Or important like a mountain,
-            <br>Or tall like a tree
-            <br>When green is all there is to be
-            <br>It could make you wonder why,
-            <br>But why wonder, why wonder?
-            <br>I am green and it'll do fine, it's beautiful
-            <br>And I think it's what I want to be
-
-          </p>
+            <!--Grid column-->
+      <div class="col-md-6 mb-4">        
+              <!-- KJS take this scroller out and swap out for html version-->
+        <h3 class="h3 mb-4">YOUPHONIC Lyrics!</h3>
+        <!-- this is where the response lyrics will go -->
+        <div id="lyrics" class="example3">     
         </div>
       </div>
       <!--Grid column-->
     </div>
-    <!--Grid row-->
-    </section>
-    </div>
-    </div>
-    <!-- </div> -->
+      <!--Grid row-->
   </main>
   <!--Main layout-->
 
@@ -132,19 +90,13 @@
 
   <!-- SCRIPTS -->
   <!-- JQuery -->
-  <!--   
-  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-  <!-- Bootstrap tooltips 
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript 
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript 
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!-- Initializations 
-  <script type="text/javascript">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <!-- Initializations -->
+  <script type="text/javascript" src="assets/js/app.js">
     // Animations initialization
     new WOW().init();
-  </script> -->
+  </script>
 </body>
 
 </html>

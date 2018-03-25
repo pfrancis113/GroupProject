@@ -1,0 +1,14 @@
+
+.form-control {
+        text-align: center; 
+        border: 3px solid #357cbc;  
+        margin: 10px;  
+}
+
+body {
+    background-color: #fbfcfc;
+}
+
+.h3 {
+    text-align: center;
+}
